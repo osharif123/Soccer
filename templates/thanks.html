@@ -5,6 +5,9 @@
   </head>
   <body>
     <h1>Thanks for RSVPing, {{ name }}!</h1>
-    <p>We look forward to seeing you on the soccer field.</p>
+    <p>You are player {{ count }}/{{ max_players }}</p>
+    {% if count == max_players %}
+      <p>Sorry, RSVPs are now closed.</p>
+    {% endif %}
   </body>
 </html>

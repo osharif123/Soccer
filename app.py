@@ -20,7 +20,10 @@ def rsvp():
         df = pd.DataFrame(players, columns=['Name', 'Timestamp'])
         df.to_excel(excel_path, index=False)
 
-        return render_template('thanks.html', name=player_name)
+        # Get the count of players who have RSVP'd
+        player_count = len(players)
+
+        return render_template('thanks.html',  max_players="12", name=player_name, count=player_count)
     else:
         return render_template('index.html')
 

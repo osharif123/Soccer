@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets RSVP for Soccer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Lets RSVP for Soccer</h1>
+    <form method="POST" action="/">
+      <label for="name">First and last name (eg. "Nice Abu, Khalid Hussein"):</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <input type="submit" value="RSVP">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('/static/background.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #333;
+}
+
+.jumbotron {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #ccc;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+}
